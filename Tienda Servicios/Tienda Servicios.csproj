@@ -67,9 +67,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aplicacion\AutorDto.cs" />
+    <Compile Include="Aplicacion\Consulta.cs" />
+    <Compile Include="Aplicacion\ConsultaFiltro.cs" />
+    <Compile Include="Aplicacion\Nuevo.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AutorController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
     <Compile Include="Modelo\AutorLibro.cs" />
     <Compile Include="Modelo\GradoAcademico.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -85,8 +95,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Aplicacion\" />
-    <Folder Include="Controllers\" />
+    <Folder Include="App_Data\" />
     <Folder Include="Persistencia\" />
   </ItemGroup>
   <PropertyGroup>
